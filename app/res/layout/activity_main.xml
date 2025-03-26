@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:layout_marginTop="0dp"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <!-- Логотипы и текст в горизонтальном ряду -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Уменьшенный основной логотип -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="88dp"
+            android:layout_height="75dp"
+            android:clickable="true"
+            android:contentDescription="Логотип"
+            android:focusable="true"
+            android:src="@drawable/logo" />
+
+        <!-- Текст -->
+        <TextView
+            android:id="@+id/institute_text"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="ТОО «Казахский\nНаучно-Исследовательский\nИнститут Защиты и\nКарантина Растений\nим. Ж.Жиембаева»"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- logo1 и logo2 друг под другом -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:contentDescription="Логотип"
+                android:focusable="true"
+                android:src="@drawable/inst" />
+
+            <ImageView
+                android:id="@+id/logo2"
+                android:layout_width="45dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:contentDescription="Логотип"
+                android:focusable="true"
+                android:src="@drawable/what" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="15dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Надпись "Наши услуги" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:text="Наши услуги"
+        android:textColor="#888888"
+        android:textSize="18sp" />
+
+    <!-- Горизонтальная прокрутка -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Первое изображение в CardView со скругленными углами -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image1"
+                    android:contentDescription="Изображение 1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Второе изображение в CardView со скругленными углами -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image2"
+                    android:contentDescription="Изображение 2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Третье изображение в CardView со скругленными углами -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image3"
+                    android:contentDescription="Изображение 3"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Четвертое изображение в CardView со скругленными углами -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image4"
+                    android:contentDescription="Изображение 4"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Пятое изображение в CardView со скругленными углами -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image5"
+                    android:contentDescription="Изображение 5"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Шестое изображение в CardView со скругленными углами -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image6"
+                    android:contentDescription="Изображение 6"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="15dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp" />
+
+    <!-- Кнопки -->
+    <Button
+        android:id="@+id/planty_bot_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="ИИ Агроном"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/programming_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#66BB6A"
+        android:text="Полевой дневник"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/forecast_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#66BB6A"
+        android:text="Прогноз по Вредным организмам"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/processing_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Генератор маршрута БПЛА"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        android:background="@drawable/button_background" />
+
+    <Button
+        android:id="@+id/start_work_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#FF7043"
+        android:text="Начало работы"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="211dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="4dp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

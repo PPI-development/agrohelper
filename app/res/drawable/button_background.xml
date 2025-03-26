@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Слой тени -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#55000000"/> <!-- Полупрозрачный цвет для тени -->
+            <corners android:radius="16dp"/> <!-- Радиус закругления углов тени -->
+        </shape>
+    </item>
+
+    <!-- Слой кнопки -->
+    <item android:top="1dp" android:left="1dp" android:right="1dp" android:bottom="1dp"> <!-- Смещение кнопки для эффекта тени -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- Цвет кнопки -->
+            <corners android:radius="16dp"/> <!-- Закругленные углы кнопки -->
+        </shape>
+    </item>
+</layer-list>

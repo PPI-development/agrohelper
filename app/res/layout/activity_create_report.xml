@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:textColor="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Вид деятельности -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Вид деятельности"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/activityTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textColorHint="#A9A9A9"
+            android:textSize="17sp" />
+
+        <!-- Вид работы -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Вид работы"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/workTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Место проведения работ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Место проведения работ"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/workPlaceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Культура -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Культура"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/cultureSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Фаза развития -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Фаза развития"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/developmentStageSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Область -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Область"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/regionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Район -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Район"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/districtSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Исполнитель -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Исполнитель"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/workerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Площадь -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Площадь"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/areaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:contentDescription="Поле для ввода площади"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Название хозяйства -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Название хозяйства"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/farmEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:contentDescription="Поле для ввода хозяйства"
+            android:inputType="text"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Местоположение -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Местоположение"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Кнопка "Сохранить координаты" -->
+        <Button
+            android:id="@+id/saveLocationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#66BB6A"
+            android:text="Сохранить текущие координаты"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Координаты"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner"/>
+
+        <!-- Динамические поля -->
+        <LinearLayout
+            android:id="@+id/dynamicFieldsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner"
+            android:orientation="vertical" />
+
+        <!-- Описание выполненных работ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Описание выполненных работ"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Поле для ввода описания работ"
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:background="@drawable/spinner"/>
+
+        <!-- Добавление фото -->
+        <Button
+            android:id="@+id/takePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#66BB6A"
+            android:text="Добавить фото"
+            android:textColor="#FFFFFF" />
+
+        <!-- Выбор даты -->
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#66BB6A"
+            android:text="Выбрать дату"
+            android:textColor="#FFFFFF" />
+
+        <!-- Кнопка сохранения -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#FF7043"
+            android:text="Сохранить"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

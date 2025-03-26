@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Фрагмент карты -->
+    <fragment
+        android:id="@+id/mapFragment5"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Кнопка "Добавить поле" -->
+    <Button
+        android:id="@+id/buttonAddField5"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Добавить поле"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"/>
+</RelativeLayout>

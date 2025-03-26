@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#66BB6A"
+        android:text="Мои поля"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Программирование урожая"
+        android:layout_marginTop="16dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        android:background="@drawable/button_background"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Калькулятор баковых смесей"
+        android:layout_marginTop="16dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#66BB6A"
+        android:background="@drawable/button_background"/>
+</LinearLayout>

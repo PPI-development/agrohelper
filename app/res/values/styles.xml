@@ -1,0 +1,15 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.CropApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+    <style name="GreenRoundedButton">
+        <item name="android:backgroundTint">@color/green</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/rounded_button</item>
+    </style>
+</resources>

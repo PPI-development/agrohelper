@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:textColor="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Выбор смеси -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выбор смеси"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:id="@+id/mixSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:background="@drawable/spinner"/>
+
+        <!-- Площадь -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Площадь (га)"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/areaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:background="@drawable/spinner" />
+
+        <!-- Выбор режима расчета -->
+        <RadioGroup
+            android:id="@+id/calculationMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/mode_area_only"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="По площади"
+                android:checked="true"
+                android:textSize="17sp"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/mode_area_and_tank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="По площади и объему бака"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:layout_marginStart="20dp" />
+        </RadioGroup>
+
+        <!-- Объем бака -->
+        <EditText
+            android:id="@+id/tankSizeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Объем бака (л)"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:background="@drawable/spinner"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <!-- Кнопка расчета -->
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рассчитать"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#66BB6A"/>
+
+        <!-- Результат расчета -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <!-- Разделитель -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="16dp" />
+
+        <!-- Создание собственной смеси -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Создание собственной смеси"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Объем бака для собственной смеси -->
+        <EditText
+            android:id="@+id/customTankVolumeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Объем бака (л)"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:background="@drawable/spinner"
+            android:layout_marginTop="10dp" />
+
+        <!-- Кнопка добавления ДВ -->
+        <Button
+            android:id="@+id/addIngredientButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить ДВ"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#66BB6A"
+            android:layout_marginTop="10dp" />
+
+        <!-- Список добавленных ДВ -->
+        <ListView
+            android:id="@+id/ingredientListView"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner" />
+
+        <!-- Кнопка расчета собственной смеси -->
+        <Button
+            android:id="@+id/calculateCustomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рассчитать собственную смесь"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#66BB6A"
+            android:layout_marginTop="10dp" />
+
+        <!-- Результат расчета собственной смеси -->
+        <TextView
+            android:id="@+id/customResultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

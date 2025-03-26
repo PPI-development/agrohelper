@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Контейнер для сообщений -->
+    <ScrollView
+        android:id="@+id/chatScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/inputLayout"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:id="@+id/chatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <!-- Поле ввода сообщения и кнопки -->
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Введите ваше сообщение"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:background="@drawable/spinner"
+            android:imeOptions="actionSend"
+            android:maxLines="4"/>
+
+        <Button
+            android:id="@+id/photoButton"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Загрузить фото"
+            android:drawableStart="@android:drawable/ic_menu_camera"
+            android:drawablePadding="4dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Отправить"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
+            android:enabled="false" />
+    </LinearLayout>
+
+</RelativeLayout>

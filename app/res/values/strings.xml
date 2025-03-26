@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Агро Ассистент</string>
+
+    <string-array name="crop_types">
+        <item>Пшеница</item>
+        <item>Кукуруза</item>
+        <item>Подсолнечник</item>
+        <item>Соя</item>
+        <item>Картофель</item>
+        <item>Рапс</item>
+    </string-array>
+
+    <!-- Массив типов почвы -->
+    <string-array name="soil_types">
+        <item>Нет</item>
+        <item>Чернозем</item>
+        <item>Суглинок</item>
+        <item>Песчаная почва</item>
+    </string-array>
+
+</resources>

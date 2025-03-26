@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок диалога -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Фильтры"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Поля для фильтрации -->
+
+        <!-- Дата -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дата"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="8dp"
+            android:hint="Выберите дату"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="false" />
+
+        <!-- Вид деятельности -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вид деятельности"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerActivityType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner"
+            android:layout_marginTop="8dp" />
+
+        <!-- Вид работы -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вид работы"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerWorkType"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner"
+            android:layout_marginTop="8dp" />
+
+        <!-- Место проведения работ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Место проведения работ"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerWorkPlace"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner"
+            android:layout_marginTop="8dp" />
+
+        <!-- Область -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Область"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerRegion"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner"
+            android:layout_marginTop="8dp" />
+
+        <!-- Район -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Район"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner"
+            android:layout_marginTop="8dp" />
+
+        <!-- Кнопки управления -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="24dp">
+
+            <!-- Кнопка "Применить фильтры" -->
+            <Button
+                android:id="@+id/buttonApplyFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Применить"
+                android:textColor="#FFFFFF"
+                android:textSize="12dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="#66BB6A"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Кнопка "Сбросить фильтры" -->
+            <Button
+                android:id="@+id/buttonClearFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сбросить"
+                android:textSize="12dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_background"
+                android:backgroundTint="#FF7043"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

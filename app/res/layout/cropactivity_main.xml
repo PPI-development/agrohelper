@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Spinner for selecting pests -->
+    <Spinner
+        android:id="@+id/pestSpinner"
+        android:layout_width="344dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner" />
+
+    <!-- LinearLayout for buttons with equal spacing and rounded corners -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pestSpinner"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnShowGraph"
+            style="@style/GreenRoundedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Показать график"
+            android:textSize="11sp"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            style="@style/GreenRoundedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Рассчитать"
+            android:textSize="11sp"/>
+
+        <Button
+            android:id="@+id/btnPredict"
+            style="@style/GreenRoundedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Прогноз"
+            android:textSize="11sp"/>
+    </LinearLayout>
+
+    <!-- TextView to display dependency result -->
+    <TextView
+        android:id="@+id/tvDependencyResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text=" "
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <!-- LineChart for displaying pest data -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/tvDependencyResult"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- LineChart for displaying forecast data -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/forecastChart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/lineChart"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- График для почасового прогноза -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <!-- Название населенного пункта -->
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Населенный пункт"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000" />
+
+        <!-- Прогноз погоды для 2 дня -->
+        <TextView
+            android:id="@+id/day2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Прогноз на 2-й день"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66BB6A"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Прогноз погоды для 3 дня -->
+        <TextView
+            android:id="@+id/day3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Прогноз на 3-й день"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66BB6A"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Прогноз погоды для 4 дня -->
+        <TextView
+            android:id="@+id/day4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Прогноз на 4-й день"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66BB6A"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Прогноз погоды для 5 дня -->
+        <TextView
+            android:id="@+id/day5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Прогноз на 5-й день"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66BB6A"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Прогноз погоды для 6 дня -->
+        <TextView
+            android:id="@+id/day6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Прогноз на 6-й день"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66BB6A"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Прогноз погоды для 7 дня -->
+        <TextView
+            android:id="@+id/day7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Прогноз на 7-й день"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66BB6A"
+            android:background="@drawable/button_background"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>

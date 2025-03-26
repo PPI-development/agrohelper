@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="20dp">
+
+
+    <!-- Карта Google Maps с рамкой и закругленными краями -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mapCardView"
+        android:layout_width="0dp"
+        android:layout_height="370dp"
+        android:layout_margin="16dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSelectPhotos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardElevation="6dp">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Кнопка выбора фотографий -->
+    <Button
+        android:id="@+id/buttonSelectPhotos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#66BB6A"
+        android:text="Выбор фотографий"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mapCardView" />
+
+    <!-- Поле ввода высоты полета -->
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Высота полета (м)"
+        android:inputType="numberDecimal"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/buttonSelectPhotos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:textColorHint="#A9A9A9" />
+
+    <!-- Поле ввода скорости полета -->
+    <EditText
+        android:id="@+id/editTextSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Скорость полета (м/с)"
+        android:inputType="numberDecimal"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/editTextHeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:textColorHint="#A9A9A9" />
+
+    <!-- Кнопка построить маршрут -->
+    <Button
+        android:id="@+id/buttonBuildRoute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#66BB6A"
+        android:text="Построить маршрут"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextSpeed" />
+
+    <!-- Кнопка История -->
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FF7043"
+        android:text="История"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonBuildRoute" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

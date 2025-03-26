@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<osmdroid>
+    <!-- Путь для кэша тайлов -->
+    <tilesource>Mapnik</tilesource>
+    <cache-path>osmdroid</cache-path>
+    <tile-cache-size>500000</tile-cache-size>
+    <tile-file-system-cache-size>500000</tile-file-system-cache-size>
+</osmdroid>
+
+

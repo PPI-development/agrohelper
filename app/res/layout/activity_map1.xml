@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Фрагмент карты -->
+    <fragment
+        android:id="@+id/mapFragment1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Кнопки поверх карты -->
+    <LinearLayout
+        android:id="@+id/buttonsLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:background="#80000000"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Кнопка "Создать отчет" -->
+        <Button
+            android:id="@+id/buttonCreateReport2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#66BB6A"
+            android:text="Создать отчет"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <!-- Кнопка "Фильтры" -->
+        <Button
+            android:id="@+id/buttonFilters2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#42A5F5"
+            android:text="Фильтры"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <!-- Кнопка "Показать в виде списка" -->
+        <Button
+            android:id="@+id/buttonShowAsList2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#42A5F5"
+            android:text="Показать в виде списка"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Кнопка "Экспорт отчетов" внизу -->
+    <Button
+        android:id="@+id/buttonExportReports2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Экспорт отчетов"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FF7043"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+</RelativeLayout>

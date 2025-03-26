@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Кнопки в верхней части экрана -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <!-- Кнопка "Создать отчет" -->
+        <Button
+            android:id="@+id/buttonCreateReport1"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#66BB6A"
+            android:text="Создать отчет"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <!-- Кнопка "Фильтры" -->
+        <Button
+            android:id="@+id/buttonFilters1"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#42A5F5"
+            android:text="Фильтры"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"/>
+
+        <!-- Кнопка "Показать на карте" -->
+        <Button
+            android:id="@+id/buttonShowOnMap1"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:backgroundTint="#42A5F5"
+            android:text="Показать на карте"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- RecyclerView для списка отчетов -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReports1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Кнопка "Экспорт отчетов" -->
+    <Button
+        android:id="@+id/buttonExportReports1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Экспорт отчетов"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FF7043"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
